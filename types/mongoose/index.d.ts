@@ -388,6 +388,9 @@ declare module "mongoose" {
 
     /** sets the underlying driver's promise library (see http://mongodb.github.io/node-mongodb-native/2.1/api/MongoClient.html) */
     promiseLibrary?: any;
+    
+    /** See http://mongoosejs.com/docs/connections.html#use-mongo-client **/
+    useMongoClient?: boolean;
   }
 
   interface ConnectionOptions extends
